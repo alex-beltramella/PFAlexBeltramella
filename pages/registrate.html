@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Section</title>
+    <link rel="shortcut icon" href="./img/logo-para-favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a5ade099d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    
+</head>
+
+<body class="body-ingresar">
+    <header>
+        <a href="../index.html"><img class="logo" src="../img/logo-para-nav.png" alt="logo de music section"></a>
+        <nav class="navbar">
+            <ul class="navbar__ul">
+                <li class="navbar__link"><a href="../pages/productos.html">Productos <i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
+                <li class="navbar__link"><a href="../pages/ingresar.html">Ingresar</a></li>
+                <li class="navbar__link"><a href="../pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="formulario__ingresar-contenedor">
+        <fieldset class="formulario__fieldset-ingresar">
+            <h2 class="formulario__h2">Registrate</h2> 
+            <form class="formulario__ingresar" action="get">
+                <label for="nombre">Nombre</label>
+                <input class="label__input" type="text" name="nombre" id="nombre" required placeholder="Nombre">
+
+                <label for="apellido">Apellido</label>
+                <input class="label__input" type="surname" name="apellido" id="apellido" required placeholder="Apellido">
+
+                <label for="Email">Email</label>
+                <input class="label__input" type="Email" name="email" id="email" required placeholder="Email">
+
+                <label for="Contraseña">Contraseña</label>
+                <input class="label__input" type="password" name="contraseña" id="contraseña" required placeholder="Contraseña">
+
+                <label for="confirmar contraseña">Confirmar contraseña</label>
+                <input class="label__input" type="password" name="contraseña" id="contraseña" required placeholder="Confirmar contraseña">
+
+                <div class="container_boton-ingresar">
+                    <button class="formulario__boton-ingresar">Ingresar</button>
+                </div>
+                
+                <a class="boton__crear-cuenta" href="./ingresar.html">Ya tengo cuenta</a>
+            </form>
+        </fieldset>
+    </div>
+
+    
+</body>
+
+</html>

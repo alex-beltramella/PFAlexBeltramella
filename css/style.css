@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*INICIO*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .header {
+        width: 100%;
+        background-color: red;
+    }
+
+
+    .logo-img {
+        width: 150px;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3362a3f5;
+    border-radius: 3px;
+}
+
+.logo {
+    width: 90px;
+}
+
+.logo-img {
+    width: 90px;
+}
+
+.navbar {
+    list-style: none;
+    height: 100%;
+}
+
+.navbar__ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.navbar__ul > li:hover {
+    background-color: #f0be62;
+    border-radius: 3px;
+}
+
+.navbar_ul-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.navbar__ul li:hover .navbar_ul-vertical {
+    display: block;
+    border-radius: 5px;
+}
+
+.navbar_ul-vertical li:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.navbar_ul-vertical li a {
+    display: block;
+    background-color: #3362a3b9;
+    font-size: 19px;
+    color: white;
+    padding: 15px 15px 15px;
+    text-decoration: none;
+}
+
+.navbar__link {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+
+.navbar__link a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.video__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+i {
+    color: white;
+}
+
+.fotos__container{
+    width: 300px;
+    height: 200px;
+}
+
+.fotos__container-img {
+    width: 100%;
+    height: 100%;
+}
+
+/*NEWSLATTER*/
+.section_newslatter {
+    background-color: #699EB3;
+    width: 100%;
+}
+
+.section_newslatter-h2 {
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.section_newslatter-p {
+    width: 50%;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.section_newslatter-input {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+
+/*CARRITO*/
+.carrito__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.carrito__container-img {
+    width: 800px;
+}
+
+.carrito__h2 {
+    font-size: 50px;
+}
+
+/*INGRESAR Y REGISTRATE*/
+.body-ingresar {
+    background-image: url(../img/img-fondo-ingresar.jpg);
+}
+
+.formulario__ingresar-contenedor {
+    width: 300px;
+    margin-left: 40%;
+    background-color: rgba(255, 255, 255, 0.055);
+}
+
+.formulario__fieldset-ingresar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+.formulario__h2 {
+    background-color: #F0BF62;
+    border-radius: 5px;
+}
+
+.formulario__ingresar{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.boton__crear-cuenta {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: #f0be62;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.boton__crear-cuenta:hover {
+    background-color: rgba(255, 255, 255, 0.336);
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+
+.container_boton-ingresar {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__boton-ingresar {
+    width: 60px;
+}
+
+.label__input {
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    border: 0.5px solid #F0BF62;
+    border-radius: 5px;
+}
+
+/*Section*/
+.section_mas_vendidos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 10px;
+}
+
+.section_mas_vendidos-article {
+    width: 100%;
+}
+
+.section_mas_vendidos-img {
+    width: 100%;
+}
+
+
+/*PRODUCTOS*/
+main {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.main h2 {
+    display: block;
+    text-align: top;
+}
+
+.cartas {
+    width: 30%;
+    background-color: #699EB3;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-inline: 1.5%;
+    transition: transform .2s;
+}
+
+.cartas:hover {
+    transform: scale(1.1);
+}
+
+.cartas__img {
+    width: 100%;
+}
+
+.cartas__titulo {
+    background-color: #3362a375;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+.cartas__parrafo {
+    font-size: 15px;
+}
+
+.cartas__boton {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #F0BF62;
+}
+
+.cartas_boton:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+    color: white;
+}
+
+.cartas__img,
+.cartas__titulo,
+.cartas__parrafo {
+    margin-bottom: 10px;
+}
+
+/*FOOTER*/
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+}
+
+footer {
+    background-color: black;
+    border-radius: 3px;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer_redes-sociales {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/*ANIMACION ZOOM PARA LOGO DE REDES*/
+.footer_fa {
+    transition: transform .2s;
+}
+
+.footer_fa:hover {
+    transform: scale(1.5);
+}
+
+.footer_ins {
+    transition: transform .2s;
+}
+
+.footer_ins:hover {
+    transform: scale(1.5);
+}
+
+.footer_wsp {
+    transition: transform .2s;
+}
+
+.footer_wsp:hover {
+    transform: scale(1.5);
+}
+/**/
+.footer_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_logo-img {
+    width: 230px;
+    
+} 
+
+.footer_logo-img:hover {
+    background-color: #ffffff04;
+    border-radius: 20%;
+
+}
+
+.footer_nuestros-productos {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer_nuestros-productos ul li {
+    list-style: none;
+}
+
+.footer_nuestros-productos ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .2s;
+}
+
+.footer_nuestros-productos ul li a:hover, .footer_nuestros-productos ul li a:focus {
+    background-size: 100% 2px;
+}
+
+.footer_h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer_derechos-autor {
+    display: flex;
+}
+
+.footer_derechos-autor p {
+    color: white;
+}
