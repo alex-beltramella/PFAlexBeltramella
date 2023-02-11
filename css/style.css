@@ -13,13 +13,24 @@ body {
 
 @media screen and (max-width: 480px) {
     
-    .header {
+    header {
         width: 100%;
     }
 
 
     .logo-img {
-        width: 200px;
+        font-size: 100px;
+    }
+
+    .footer_redes-sociales {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 90%;
+        height: 80%;
+        border-radius: 5px;
+        gap: 10px;
     }
 }
 
@@ -83,6 +94,11 @@ header {
 }
 
 .navbar__link {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.navbar__link-carrito {
     font-size: 18px;
     margin-right: 20px;
 }
