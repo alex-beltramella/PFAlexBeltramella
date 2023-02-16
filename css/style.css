@@ -14,16 +14,19 @@ body {
 @media screen and (max-width: 480px) {
     
     header {
-        width: 100%;
+        width: 100vw;
     }
 
-
-    .logo-img {
-        font-size: 100px;
+    .navbar__link {
+        /*display: none;*/
     }
 
     .footer_redes-sociales {
         flex-direction: column;
+    }
+
+    .h2-video-de-muestra {
+        display: none;
     }
 
     iframe {
@@ -31,7 +34,21 @@ body {
         height: 80%;
         border-radius: 5px;
         gap: 10px;
+        margin-top: 10px;
     }
+
+    .formulario__ingresar-contenedor {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*CARDS*/
+    .carta1, .carta2 {
+        display: none;
+        width: 100vw;
+    }
+
+
 }
 
 header {
@@ -170,6 +187,12 @@ i {
 }
 
 /*INGRESAR Y REGISTRATE*/
+.formulario__ingresar-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .body-ingresar {
     background-image: url(../img/img-fondo-ingresar.jpg);
 }
@@ -268,7 +291,43 @@ main {
     text-align: top;
 }
 
-.cartas {
+.carta1 {
+    width: 30%;
+    background-color: #699EB3;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-inline: 1.5%;
+    transition: transform .2s;
+}
+.carta2 {
+    width: 30%;
+    background-color: #699EB3;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-inline: 1.5%;
+    transition: transform .2s;
+}
+.carta3 {
+    width: 30%;
+    background-color: #699EB3;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-inline: 1.5%;
+    transition: transform .2s;
+}
+.carta4 {
+    width: 30%;
+    background-color: #699EB3;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-inline: 1.5%;
+    transition: transform .2s;
+}
+.carta5 {
     width: 30%;
     background-color: #699EB3;
     width: 250px;
@@ -278,7 +337,12 @@ main {
     transition: transform .2s;
 }
 
-.cartas:hover {
+
+.carta1:hover,
+.carta2:hover,
+.carta3:hover,
+.carta4:hover,
+.carta5:hover {
     transform: scale(1.1);
 }
 
