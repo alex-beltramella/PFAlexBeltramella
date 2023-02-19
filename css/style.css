@@ -12,14 +12,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    
-    header {
-        width: 100vw;
-    }
-
-    .navbar__link {
-        /*display: none;*/
-    }
 
     .footer_redes-sociales {
         flex-direction: column;
@@ -41,14 +33,6 @@ body {
         justify-content: center;
         align-items: center;
     }
-
-    /*CARDS*/
-    .carta1, .carta2 {
-        display: none;
-        width: 100vw;
-    }
-
-
 }
 
 header {
@@ -57,6 +41,7 @@ header {
     justify-content: space-between;
     background-color: #3362a3f5;
     border-radius: 3px;
+    width: 100%;
 }
 
 .logo {
@@ -278,71 +263,7 @@ i {
 
 
 /*PRODUCTOS*/
-main {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 30px;
-    margin-left: 30px;
-}
-
-.main h2 {
-    display: block;
-    text-align: top;
-}
-
-.carta1 {
-    width: 30%;
-    background-color: #699EB3;
-    width: 250px;
-    padding: 10px;
-    border-radius: 5px;
-    margin-inline: 1.5%;
-    transition: transform .2s;
-}
-.carta2 {
-    width: 30%;
-    background-color: #699EB3;
-    width: 250px;
-    padding: 10px;
-    border-radius: 5px;
-    margin-inline: 1.5%;
-    transition: transform .2s;
-}
-.carta3 {
-    width: 30%;
-    background-color: #699EB3;
-    width: 250px;
-    padding: 10px;
-    border-radius: 5px;
-    margin-inline: 1.5%;
-    transition: transform .2s;
-}
-.carta4 {
-    width: 30%;
-    background-color: #699EB3;
-    width: 250px;
-    padding: 10px;
-    border-radius: 5px;
-    margin-inline: 1.5%;
-    transition: transform .2s;
-}
-.carta5 {
-    width: 30%;
-    background-color: #699EB3;
-    width: 250px;
-    padding: 10px;
-    border-radius: 5px;
-    margin-inline: 1.5%;
-    transition: transform .2s;
-}
-
-
-.carta1:hover,
-.carta2:hover,
-.carta3:hover,
-.carta4:hover,
-.carta5:hover {
+.cards:hover {
     transform: scale(1.1);
 }
 
